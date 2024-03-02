@@ -1,0 +1,156 @@
+/* @font-face {
+    font-family: pp;
+    src: url('PPNeueMontreal-Medium.otf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "IBM Plex Sans", sans-serif; */
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.loader img {
+    position: absolute;
+    top: 18.5vw;
+    left: 42.5vw;
+    z-index: 99;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.loader .left-door {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: #080705;
+    /* background-color: #ffffff; */
+    border-top: solid 2px black ;
+    border-right:solid 2px #2727271f;
+    border-bottom: solid 2px black;
+}
+
+.loader .right-door {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    background-color: #080705;
+    /* background-color: #000000; */
+    border-top: solid 2px black ;
+    border-left:solid 2px #2727271f;
+    border-bottom: solid 2px black;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* border: 5.75rem solid #030201; */
+}
+
+.page1-top nav {
+    width: 98%;
+    height: 10vh;
+    margin-left: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(0, 255, 255, 0.493); */
+    border-bottom: solid white 2px;
+    padding: 0 0.25vw;
+    
+    font-size: 1vw;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.page1-top h3 span {
+    display: inline-block;
+
+}
+
+.cursive {
+    font-family: "Moon Dance", cursive;
+    font-size: 1.75vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page1-top nav .left-nav {
+    height: 100%;
+    width: 20%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: left ;
+    align-items: center;
+    gap: 2vw;
+    color: #fff;
+}
+
+.page1-top nav .right-nav {
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: right ;
+    align-items: center;
+    gap: 2vw;
+    color: #fff;
+}
+
+.page1 .page1-main {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    /* background-color: blanchedalmond; */
+}
+
+.page1 .page1-main .main-caption {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: lightcoral; */
+    padding: 5vw;
+}
+
+.page1-main .main-caption h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5.4vw;
+    color: #fff;
+}
